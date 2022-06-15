@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        let term = null;
+    </script>
+</head>
+
+<body>
+    <template id="_home">
+        <section id="home" class="disabled">
+            <nav id="navbar">
+                <h1>Nunzio Ricci</h1>
+                <ul>
+                    <li><a href="#home" onclick="term.exec('home', { typing:true, delay: 70})"> home </a></li>
+                    <li><a href="#bio" onclick="term.exec('whoami', { typing:true, delay: 70})"> bio </a></li>
+                    <li><a href="#social" onclick="term.exec('wget', { typing:true, delay: 70})"> social </a></li>
+                    <!--li><a href="#!" onclick="term.exec('cv', { typing:true, delay: 70})"> cv </a></li-->
+                    <li><a href="#contact" onclick="term.exec('contact', { typing:true, delay: 70})"> contact </a></li>
+                </ul>
+            </nav>
+            <header>
+                <h1> What is this website? </h1>
+                <p>This is a project I have been planning to do for quite some time. It is a cv but it is also a game. I
+                    will update it from time to time to add new features and easter eggs. Through this page you will be
+                    able to find information about me, my professional skills and, for those who have the curiosity to
+                    look, my hobbies.</p>
+            </header>
+        </section>
+    </template>
+    <template id="_bio">
+        <section id="bio" class="disabled">
+            
+            <nav id="navbar">
+                <h1>Nunzio Ricci</h1>
+                <ul>
+                    <li><a href="#home" onclick="term.exec('home', { typing:true, delay: 70})"> home </a></li>
+                    <li><a href="#bio" onclick="term.exec('whoami', { typing:true, delay: 70})"> bio </a></li>
+                    <li><a href="#social" onclick="term.exec('wget', { typing:true, delay: 70})"> social </a></li>
+                    <!--li><a href="#!" onclick="term.exec('cv', { typing:true, delay: 70})"> cv </a></li-->
+                    <li><a href="#contact" onclick="term.exec('contact', { typing:true, delay: 70})"> contact </a></li>
+                </ul>
+            </nav>
+            <header>
+                <h1> Who am I? </h1>
+                <p>I am Nunzio Ricci, I am 21 years old and live near Naples. I am a nerd. I love maths, computer
+                    science and technology. I started getting into programming when I discovered spreadsheets, at the
+                    age of 12; my first project was a small game in excel that helped my three-year-old cousins learn to
+                    read.
+                    In the early years I programmed exclusively in Java some Minecraft mods and plugins and sporadically
+                    Telegram web bots and web automations. In 2019 I started studying Python in depth and fell in love
+                    with it. I currently use it mainly for automation of my projects or for small personal projects. In
+                    2022, I approached the world of web development and general graphical application development.
+                </p>
+            </header>
+        </section>
+    </template>
+    <template id="_social">
+        <section id="social" class="disabled">
+            
+            <nav id="navbar">
+                <h1>Nunzio Ricci</h1>
+                <ul>
+                    <li><a href="#home" onclick="term.exec('home', { typing:true, delay: 70})"> home </a></li>
+                    <li><a href="#bio" onclick="term.exec('whoami', { typing:true, delay: 70})"> bio </a></li>
+                    <li><a href="#social" onclick="term.exec('wget', { typing:true, delay: 70})"> social </a></li>
+                    <!--li><a href="#!" onclick="term.exec('cv', { typing:true, delay: 70})"> cv </a></li-->
+                    <li><a href="#contact" onclick="term.exec('contact', { typing:true, delay: 70})"> contact </a></li>
+                </ul>
+            </nav>
+            <header>
+                <h1> Social </h1>
+                <p><br>
+                    linkedin: <a href="https://www.linkedin.com/in/nunzio-ricci">nunzio-ricci</a> <br>
+                    github: <a href="https://github.com/Ricciard">Ricciard</a><br>
+                </p>
+            </header>
+        </section>
+    </template>
+    <template id="_contact">
+        <section id="contact" class="disabled">
+            <nav id="navbar">
+                <h1>Nunzio Ricci</h1>
+                <ul>
+                    <li><a href="#home" onclick="term.exec('home', { typing:true, delay: 70})"> home </a></li>
+                    <li><a href="#bio" onclick="term.exec('whoami', { typing:true, delay: 70})"> bio </a></li>
+                    <li><a href="#social" onclick="term.exec('wget', { typing:true, delay: 70})"> social </a></li>
+                    <!--li><a href="#!" onclick="term.exec('cv', { typing:true, delay: 70})"> cv </a></li-->
+                    <li><a href="#contact" onclick="term.exec('contact', { typing:true, delay: 70})"> contact </a></li>
+                </ul>
+            </nav>
+            <header>
+                <h1> Contact </h1>
+                <p>
+                    email: <a href="mailto:nunzio.ricci.2000@gmail.com">nunzio.ricci.2000@gmail.com</a>
+                </p>
+            </header>
+        </section>
+    </template>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
